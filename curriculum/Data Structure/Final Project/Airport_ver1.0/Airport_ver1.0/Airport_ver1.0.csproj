@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54CA0E20-48D7-4874-B247-A5B7188E296E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Airport_ver1._0</RootNamespace>
+    <AssemblyName>Airport_ver1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookRefundTickets\BookRefundTicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRefundTickets\BookRefundTicketsForm.Designer.cs">
+      <DependentUpon>BookRefundTicketsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookRefundTickets\BookRefundTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRefundTickets\BookRefundTicketForm.Designer.cs">
+      <DependentUpon>BookRefundTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileIO\TicketsIO.cs" />
+    <Compile Include="FileIO\UsernamePasswordIO.cs" />
+    <Compile Include="FileIO\UsersTicketsIO.cs" />
+    <Compile Include="Users\Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Login\LoginProgram.cs" />
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTickets\DeleteTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTickets\DeleteTicketForm.Designer.cs">
+      <DependentUpon>DeleteTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTickets\ManageTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTickets\ManageTicketForm.Designer.cs">
+      <DependentUpon>ManageTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTickets\ManageTicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTickets\ManageTicketsForm.Designer.cs">
+      <DependentUpon>ManageTicketsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Register\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Register\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Register\RegisterProgram.cs" />
+    <Compile Include="Tickets\Ticket.cs" />
+    <Compile Include="Users\User.cs" />
+    <EmbeddedResource Include="BookRefundTickets\BookRefundTicketsForm.resx">
+      <DependentUpon>BookRefundTicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRefundTickets\BookRefundTicketForm.resx">
+      <DependentUpon>BookRefundTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTickets\DeleteTicketForm.resx">
+      <DependentUpon>DeleteTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTickets\ManageTicketForm.resx">
+      <DependentUpon>ManageTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTickets\ManageTicketsForm.resx">
+      <DependentUpon>ManageTicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Users\Register\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

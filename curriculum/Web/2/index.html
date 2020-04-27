@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="My web page" content="web, html"/>
+        <title>Web Program Design</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="exp2.css">
+    </head>
+
+    <body id="top">
+        <!--网页标题和相关链接-->
+        <div class="header">
+            <div class="header-blur"></div>
+            <div class="header-shadow"></div>
+            <div class="header-text-mask">
+                <div class="header-text">
+                    <div class="title">
+                        <h1>Web Program Design</h1>
+                        <p>Basic HTML and CSS</p>
+                    </div>
+                    <div class="manubar">
+                        <a href="https://github.com/" target="blank">Contact</a>
+                        <a href="https://www.microsoftstore.com.cn/" target="blank">Links</a>
+                        <a href="https://cn.bing.com/" target="blank">About</a>
+                        <a href="https://cn.bing.com/images/" target="blank">Photos</a>
+                        <a href="https://msdn.microsoft.com/en-us/" target="blank">Blog</a>
+                        <a href="https://www.microsoft.com/zh-cn" target="blank">Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--网页的主体-->
+        <div class="content">
+            <div class="page">
+                <!--网页的内容-->
+                <div class="content-text">
+                    <div class="content-textbox" id="Basic-HTML">
+                        <h2>基础HTML</h2>
+                        <div class="sub-textbox">
+                            <h3>超文本标记语言(HTML)</h3>
+                            <blockquote>
+                                <dl>
+                                    <dt>描述网页信息的内容跟结构</dt>
+                                        <dd>不同于网页效果的展示（在屏幕上显示的外观）</dd>
+                                    <dt>用开始标签跟结束标签(tags)环绕文本内容</dt>
+                                    <dt>每个标签称为一个元素</dt>
+                                        <dd>语法: &lt;element&gt; 内容&lt;/element&gt;</dd>
+                                        <dd>示例: &lt;p&gt;这是一个段落&lt;/p&gt;</dd>
+                                    <dt>大多数空格字符在HTML中是可忽略的（被忽略或合并为一个空格）</dt>
+                                    <dt>我们将使用的是更严谨，更标准的版本XHTML</dt>
+                                </dl>
+                                <dl>
+                                    <dt>HTML 编程规范: HTML是树形结构.</dt>
+                                        <dd>缩进嵌套的元素</dd>
+                                        <dd>用空行分隔兄弟节点(siblings)使代码易读</dd>
+                                    <dt>HTML 语言的职责</dt>
+                                        <dd>HTML：描述网页的内容跟结构</dd>
+                                        <dd>样式表 (CSS)：描述网页的外观</dd>
+                                        <dd>脚本(JavaScript)：描述网页的行为</dd>
+                                    <dt>index.html</dt>
+                                        <dd>http://www.scut.edu.cn/ = http://www.scut.edu.cn/index.html</dd>
+                                </dl>
+                            </blockquote>
+                        </div>
+                        <div class="tag-box" id="HTML-tags">
+                            <h3 >HTML标签</h3>
+                            <blockquote>
+                                <dl>
+                                    <dt id="tag1">注释: &lt;!-- … --&gt;</dt>
+                                        <dd>为你的HTML文件加入注释或者 “添加注释” 文本</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;!-- My web page, by Tim Student SS 12345, Spring 2048 --&gt;
+                                                <br />
+                                                &lt;p&gt;SS courses are &lt;!-- NOT --&gt; a lot of fun!&lt;/p&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <!-- My web page, by Tim Student SS 12345, Spring 2048 --> 
+                                                <p>SS courses are <!-- NOT --> a lot of fun!</p>
+                                            </div>
+                                        </dd>
+                                        <dd>注释也可使网页的一段代码无效</dd>
+                                        <dd>注释不能嵌套使用，也不能包含 –</dd>
+                                        <dd>许多网页不能彻底（或完全地）被注释掉
+                                            <p>·添加注释是一种沟通途径，
+                                                用来向你的同事解释你的设计方法和目的，
+                                                甚至有时也是为了方便你以后查看.</p>
+                                            <p>·添加注释不是为了给浏览器跟用户看，
+                                                而是为了开发者跟设计者.</p>
+                                        </dd>
+                                    <dt id="tag2">网页的标题: &lt;title&gt;</dt>
+                                        <dd>描述该网页的标题</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;title&gt;Chapter 2: HTML Basics&lt;/title&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>放在网页的head部分里面</dd>
+                                        <dd>在浏览器的标题栏显示并且作为收藏网页时的标题</dd>
+                                    <dt id="tag3">网页元数据: &lt;meta&gt;</dt>
+                                        <dd>描述网页元数据</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;meta name=<q>description</q> content=<q>introduction of SCUT</q> /&gt;
+                                            </code>
+                                            </div>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;meta http-equiv=<q>Content-Type</q> content=<q>text/html; charset=gbk</q> /&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>放在网页的head部分里面</dd>
+                                        <dd>字符编码(chartset) 在实际操作中非常重要, 
+                                            我们通常采用 utf-8 编码而不是英文编码</dd>
+                                    <dt id="tag4">段落: &lt;p&gt;</dt>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                    &lt;p&gt;You're not your job. 
+                                                    You're not how much money you have in the bank. 
+                                                    You're not the car you drive. 
+                                                    You're not the contents of your wallet. 
+                                                    You're not your khakis. You're the all-singing, 
+                                                    all-dancing crap of the world.&lt;/p&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p>You're not your job. 
+                                                You're not how much money you have in the bank. 
+                                                You're not the car you drive. 
+                                                You're not the contents of your wallet. 
+                                                You're not your khakis. You're the all-singing, 
+                                                all-dancing crap of the world.</p>
+                                            </div>
+                                        </dd>
+                                        <dd>放在body部分里面</dd>
+                                        <dd>
+                                            <a href="http://www.w3school.com.cn/html/html_paragraphs.asp" target="blank">
+                                            更多段落的示例</a>
+                                        </dd>
+                                    <dt id="tag5">换行符: &lt;br /&gt;</dt>
+                                        <dd>在块元素中强制换行（内联）</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;p&gt;Teddy said it was a hat, 
+                                                &lt;br /&gt; So I put it on.&lt;/p&gt;
+                                                &lt;p&gt;Now Daddy's sayin', &lt;br /&gt; 
+                                                Where the heck's the toilet plunger gone?&lt;/p&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                    <p>Teddy said it was a hat, 
+                                                    <br /> So I put it on.</p> 
+                                                    <p>Now Daddy's sayin', <br /> 
+                                                    Where the heck's the toilet plunger gone?</p>
+                                            </div>
+                                        </dd>
+                                        <dd>br 后面必须紧随 /&gt;</dd>
+                                    <dt id="tag6">标题: &lt;h1&gt;, &lt;h2&gt;, …&lt;h6&gt;</dt>
+                                        <dd>在网页中定义标题来分隔主区域（块）</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;h1&gt;South China University of 
+                                                Technology&lt;/h1&gt;<br/>
+                                                &lt;h2&gt;School of Computer Science and 
+                                                Engineering&lt;/h2&gt;<br/>
+                                                &lt;h3&gt;Support by Google&lt;/h3&gt; 
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <h1 style="color:black">South China University of Technology</h1> 
+                                                <h2 style="color:black">School of Computer Science and Engineering</h2>
+                                                <h3 style="color:black">Support by Google</h3>                                                
+                                            </div>
+                                        </dd>
+                                        <dd>
+                                            <a href="http://www.w3school.com.cn/html/html_headings.asp" target="blank">
+                                            更多定义标题的示例</a>
+                                        </dd>
+                                    <dt id="tag7">水平线: &lt;hr /&gt;</dt>
+                                        <dd>用来分隔网页的主要区域(块)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;p&gt;First paragraph&lt;/p&gt;<br/>
+                                                &lt;hr /&gt;<br/>
+                                                &lt;p&gt;Second paragraph&lt;/p&gt; 
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p>First paragraph</p> 
+                                                <hr />
+                                                <p>Second paragraph</p>                                                                                               
+                                            </div>
+                                        </dd>
+                                        <dd>后面必须紧跟着 /&gt;</dd>
+                                    <dt id="tag8">链接: &lt;a&gt;</dt>
+                                        <dd>链接，或者<q>锚点</q>，指向其他页面(内联)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;p&gt;<br/>Search<br/>
+                                                &lt;a href=<q>http://www.google.com/</q>&gt;
+                                                Google&lt;/a&gt; or our <br/>
+                                                &lt;a href=<q>lectures.html</q>&gt;
+                                                Lecture Notes&lt;/a&gt;<br/>
+                                                &lt;/p&gt; 
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p>
+                                                Search
+                                                <a href=“http://www.google.com/” target="blank">Google</a> or our 
+                                                <a href=“lectures.html” target="blank">Lecture Notes</a>
+                                                </p>
+                                            </div>
+                                        </dd>
+                                        <dd>使用href 属性指定目标URL链接
+                                            <p>·可以是绝对的 (指向另一个网页) 
+                                                或者相对的(指向本网站的另一个页面)</p>
+                                        </dd>
+                                        <dd>锚点是内联元素；必须放在块元素中，例如 p 或 h1</dd>
+                                    <dt id="tag9">图像: &lt;img&gt;</dt>
+                                        <dd>在网页中插入绘画图片(内联)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;img src=<q>./example.jpg</q> 
+                                                alt=<q>Example</q> /&gt; 
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <img src="./example.jpg" alt="Example" width="192" height="108"/>
+                                            </div>
+                                        </dd>
+                                        <dd>src 属性指定图片的URL链接</dd>
+                                        <dd>XHTML 还要求使用一个alt 属性来描述该图片</dd>
+                                    <dt id="tag10">短语元素: &lt;em&gt;, &lt;strong&gt;</dt>
+                                        <dd>em: 强调文本(通常用<em>斜体字</em>表示)</dd>
+                                        <dd>strong: 语气更强烈强调文本 (通常用<strong>粗体</strong>显示)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;p&gt;<br/>
+                                                HTML is &lt;em&gt;really&lt;/em&gt;, <br/>
+                                                &lt;strong&gt;REALLY&lt;/strong&gt; fun!<br/>
+                                                &lt;/p&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p>
+                                                HTML is <em>really</em>,
+                                                <strong>REALLY</strong> fun!
+                                                </p>
+                                            </div>
+                                        </dd>
+                                        <dd>如往常一样, 在有效的网页中，标签必须正确地嵌套</dd>
+                                    <dt id="tag11">无序列表: &lt;ul&gt;, &lt;li&gt;</dt>
+                                        <dd>ul	表示一个项目列表 (块)</dd>
+                                        <dd>li 	表示在列表里的单个列表项目(块)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                <pre>
+&lt;ul&gt;
+    &lt;li&gt;No shoes&lt;/li&gt;
+    &lt;li&gt;No shirt&lt;/li&gt;
+    &lt;li&gt;No problem!&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <ul>
+                                                    <li>No shoes</li>
+                                                    <li>No shirt</li>
+                                                    <li>No problem!</li>
+                                                </ul>
+                                            </div>
+                                        </dd>
+                                    <dt id="tag12">有序列表: &lt;ol&gt;</dt>
+                                        <dd>ol 表示一个有编号的项目列表(块)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                <pre>
+&lt;p&gt;RIAA business model:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Sue customers for copying music&lt;/li&gt;
+    &lt;li&gt;???&lt;/li&gt;
+    &lt;li&gt;Profit!&lt;/li&gt;
+&lt;/ol&gt;</pre>
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p>RIAA business model:</p> 
+                                                <ol> 
+                                                    <li>Sue customers for copying music</li> 
+                                                    <li>???</li> 
+                                                    <li>Profit!</li> 
+                                                </ol>                                                
+                                            </div>
+                                        </dd>
+                                    <dt id="tag13">表格: &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;, &lt;caption&gt;</dt>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                <pre>
+&lt;table&gt;
+    &lt;caption&gt;Smart Guys&lt;/caption&gt;
+    &lt;tr&gt;&lt;th&gt;name&lt;/th&gt;&lt;th&gt;gender&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Bill&lt;/td&gt;&lt;td&gt;male&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Susan&lt;/td&gt;&lt;td&gt;female&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</pre>
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <table>
+                                                <caption>Smart Guys</caption>
+                                                <tr><th>name</th><th>gender</th></tr>
+                                                <tr><td>Bill</td><td>male</td></tr>
+                                                <tr><td>Susan</td><td>female</td></tr>
+                                                </table>
+                                            </div>
+                                        </dd>
+                                        <dd><strong>不要使用表格进行布局~!</strong></dd>
+                                    <dt id="tag14">定义列表: &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</dt>
+                                        <dd>dl 表示一个定义列表(块元素)</dd>
+                                        <dd>dt 表示每一个项目(即术语), 而 dd 表示它的意义</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                <pre>
+&lt;dl&gt;
+    &lt;dt&gt;newbie&lt;/dt&gt;&lt;dd&gt;one who does not have mad skills&lt;/dd&gt;
+    &lt;dt&gt;own&lt;/dt&gt;&lt;dd&gt;to soundly defeat 
+    (e.g. I owned that newbie!)&lt;/dd&gt;
+    &lt;dt&gt;frag&lt;/dt&gt;&lt;dd&gt;a kill in a shooting game&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <dl> 
+                                                    <dt>newbie</dt><dd>one who does not have mad skills</dd>
+                                                    <dt>own</dt><dd>to soundly defeat 
+                                                        (e.g. I owned that newbie!)</dd> 
+                                                    <dt>frag</dt> <dd>a kill in a shooting game</dd> 
+                                                </dl>
+                                            </div>
+                                        </dd>
+                                    <dt id="tag15">引用: &lt;blockquote&gt;</dt>
+                                        <dd>一段长引用(块元素)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;p&gt;As Lincoln said in his famous 
+                                                Gettysburg Address:&lt;/p&gt;<br />
+                                                &lt;blockquote&gt;
+                                                <blockquote>
+                                                    &lt;p&gt;Fourscore and seven years ago, 
+                                                    our fathers brought forth on this continent a new nation, 
+                                                    conceived in liberty, and dedicated to the 
+                                                    proposition that all men are created equal.&lt;/p&gt;
+                                                </blockquote>
+                                                &lt;/blockquote&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p>As Lincoln said in his famous Gettysburg Address:</p> 
+                                                <blockquote>
+                                                    <p>Fourscore and seven years ago, 
+                                                        our fathers brought forth on this continent a new nation, 
+                                                        conceived in liberty, and dedicated to the proposition 
+                                                        that all men are created equal.</p> 
+                                                </blockquote>                                                            
+                                            </div>
+                                        </dd>
+                                    <dt id="tag16">行内引用: &lt;q&gt;</dt>
+                                        <dd>一段短引用(行内元素)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;p&gt;Quoth the Raven, &lt;q&gt;Nevermore.&lt;/q&gt;&lt;/p&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p>Quoth the Raven, <q>Nevermore.</q></p>
+                                            </div>
+                                        </dd>
+                                    <dt id="tag17">计算机代码: &lt;code&gt;</dt>
+                                        <dd>code: 一段简短的计算机代码
+                                            (通常会通过固定宽度的字体呈现出来)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                &lt;p&gt; The &lt;code&gt;ul&lt;/code&gt; and 
+                                                &lt;code&gt;ol&lt; tags make lists. &lt;/p&gt;
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p> The <code>ul</code> and <code>ol</code> tags make lists. </p>
+                                            </div>
+                                        </dd>
+                                    <dt id="tag18">预编排文字: &lt;pre&gt;</dt>
+                                        <dd>一大段预编排的文字(块元素)</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                <pre>
+&lt;pre&gt;
+            Steve Jobs speaks loudly 
+            reality distortion 
+            Apple fans bow down
+&lt;/pre&gt;</pre>
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <pre>
+            Steve Jobs speaks loudly 
+            reality distortion 
+            Apple fans bow down</pre>
+                                            </div>
+                                        </dd>
+                                        <dd>显示时会保留空格和回车</dd>
+                                        <dd>以默认的等宽度字体显示</dd>
+                                </dl>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="content-textbox" id="Basic-CSS">
+                        <h2>基础CSS</h2>
+                        <div class="sub-textbox">
+                            <h3>层叠样式表(CSS): &lt;link&gt;</h3>
+                            <blockquote>
+                                <div class="codeblock">
+                                <code>
+                                    &lt;head&gt;<br/>
+                                    &lt;style type=<q>text/css</q> 
+                                    media=<q>screen</q>&gt;<br/>
+                                    ...<br/>&lt;/style&gt;<br/>
+                                    &lt;/head&gt;
+                                </code>
+                                </div>
+                                <div class="codeblock">
+                                <code>
+                                    &lt;head&gt;<br/>
+                                    ...<br/>
+                                    &lt;link href=<q>filename</q> 
+                                    type=<q>text/css</q> 
+                                    rel=<q>stylesheet</q> 
+                                    media=<q>screen</q>&gt;<br/>
+                                    ...<br/>
+                                    &lt;/head&gt;
+                                </code>
+                                </div>
+                                <dl>
+                                    <dt><strong>CSS</strong> 描述外观跟布局</dt>
+                                    <dd>不同于用来描述网页的<strong>内容</strong>的<strong>HTML</strong></dd>
+                                    <dd>能用于<strong>屏幕</strong>或者<strong>打印</strong></dd>
+                                    <dt>可以嵌入 HTML中 或者 放在独立的.css 文件中(推荐)</dt>
+                                </dl>
+                            </blockquote>
+                        </div>
+                        <div id="CSS-gramma">
+                            <h3>基础 CSS 规则的语法</h3>
+                            <blockquote>
+                                <div class="codeblock">
+                                <code>
+                                    <pre>
+selector {
+    property 1: value 1;
+    ...
+    property n: value n;
+}</pre>
+                                </code>
+                                </div>
+                                <div class="codeblock">
+                                <code>
+                                    <pre>
+p {
+    font-family: sans-serif;
+    color:red;
+}</pre>
+                                </code>
+                                </div>
+                                <dl>
+                                    <dt>注释 : /* .... */</dt>
+                                    <dt>一个 CSS 文件包含一条或多条<strong>规则</strong></dt>
+                                    <dt>每条规则以一个选择器(selector)开始， 
+                                        该选择器选中了了一个（或多个）HTML 元素 
+                                        然后对它们应用样式属性</dt>
+                                        <dd>一个 *  选择器选择了全部的元素</dd>
+                                </dl>
+                            </blockquote>
+                        </div>
+                        <div class="tag-box" id="CSS-attributions">
+                            <h3>CSS 属性</h3>
+                            <blockquote>
+                                <dl>
+                                    <dt id="CSS-color">CSS 颜色属性</dt>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                <pre>
+p {
+    color:red;
+    background-color: yellow;
+}</pre>
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p style="color:red; background-color:yellow;">
+                                                    This paragraph uses style above</p>
+                                            </div>
+                                        </dd>
+                                        <dd>
+                                            <table>
+                                                <tbody>
+                                                    <tr class="oddr">
+                                                        <th>属性</th>
+                                                        <th>描述</th>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>color</td>
+                                                        <td>元素中的文本颜色</td>
+                                                    </tr>
+                                                    <tr class="oddr">
+                                                        <td>background-color</td>
+                                                        <td>元素的背景属性</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                        <dd>设定颜色：</dd>
+                                        <dd>
+                                            <div class="codeblock">
+                                            <code>
+                                                <pre>
+p { color: red; }
+h2 { color: rgb(128, 0, 196); }
+h4 { color: #FF8800; }</pre>
+                                            </code>
+                                            </div>
+                                        </dd>
+                                        <dd>运行结果：
+                                            <div class="code-result">
+                                                <p style="color:red;">
+                                                    This paragraph uses the first style above.</p>
+                                                <h2 style="color: rgb(128, 0, 196);">
+                                                    This h2 uses the second style above.</h2>
+                                                <h4 style="color: #FF8800; ">
+                                                    This h4 uses the third style above.</h4>
+                                            </div>
+                                        </dd>
+                                        <dd>RGB 格式: 指定红, 绿, 蓝 基色的值， 
+                                            取值从0 (none) 到255 (full)</dd>
+                                        <dd>十六进制格式: 从00 (0, none) 到FF 
+                                            (255, full)的16进制RGB值</dd>
+                                    <dt id="CSS-font">CSS 字体属性</dt>
+                                        <dd>
+                                            <table>
+                                                <tbody>
+                                                    <tr class="oddr">
+                                                        <th>属性</th>
+                                                        <th>描述</th>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>font-family</td>
+                                                        <td>指定使用的字体</td>
+                                                    </tr>
+                                                    <tr class="oddr">
+                                                        <td>font-size</td>
+                                                        <td>指定字体大小</td>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>font-style</td>
+                                                        <td>用于使用/取消 斜体字</td>
+                                                    </tr>
+                                                    <tr class="oddr">
+                                                        <td>font-weight</td>
+                                                        <td>用于使用/取消 粗体字</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                        <dd><a href="http://www.w3school.com.cn/css/css_font.asp" target="blank">
+                                            完整的字体属性列表</a>
+                                        </dd>
+                                    <dt id="CSS-text">CSS 的文本属性</dt>
+                                        <dd>
+                                            <table>
+                                                <tbody>
+                                                    <tr class="oddr">
+                                                        <th>属性</th>
+                                                        <th>描述</th>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>text-align</td>
+                                                        <td>文本的水平对齐方式</td>
+                                                    </tr>
+                                                    <tr class="oddr">
+                                                        <td>text-decoration</td>
+                                                        <td>文本的修饰, 例如下划线</td>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>line-height<br/>word-spacing
+                                                            <br/>letter-spacing</td>
+                                                        <td>文本的间隔</td>
+                                                    </tr>
+                                                    <tr class="oddr">
+                                                        <td>text-indent</td>
+                                                        <td>每一段落的首字符缩进</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                        <dd><a href="http://www.w3school.com.cn/css/css_text.asp" target="blank">
+                                            完整的文本属性列表</a>
+                                    <dt id="CSS-background">CSS 的背景属性</dt>
+                                        <dd>
+                                            <table>
+                                                <tbody>
+                                                    <tr class="oddr">
+                                                        <th>属性</th>
+                                                        <th>描述</th>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>background-color</td>
+                                                        <td>背景色</td>
+                                                    </tr>
+                                                    <tr class="oddr">
+                                                        <td>background-image</td>
+                                                        <td>背景图</td>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>background-position</td>
+                                                        <td>相对于元素的背景位置</td>
+                                                    </tr>
+                                                    <tr class="oddr">
+                                                        <td>background-repeat</td>
+                                                        <td>背景是否/如何被重复</td>
+                                                    </tr>
+                                                    <tr class="ever">
+                                                        <td>background-attachment</td>
+                                                        <td>背景是否随页面滚动</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                </dl>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--悬浮导航菜单-->
+            <div class="manu">
+                <div class="manu-content">
+                    <p>CATEGORIES</p>
+                    <div class="manu-list">
+                        <a href="#Basic-HTML">基础HTML</a>
+                        <a href="#HTML-tags">HTML标签</a>
+                        <ul>
+                            <li><a href="#tag1">HTML注释</a></li>
+                            <li><a href="#tag2">网页标题</a></li>
+                            <li><a href="#tag3">网页元数据</a></li>
+                            <li><a href="#tag4">HTML段落</a></li>
+                            <li><a href="#tag5">HTML换行</a></li>
+                            <li><a href="#tag6">HTML标题</a></li>
+                            <li><a href="#tag7">HTML水平线</a></li>
+                            <li><a href="#tag8">HTML链接</a></li>
+                            <li><a href="#tag9">HTML图像</a></li>
+                            <li><a href="#tag10">HTML短语</a></li>
+                            <li><a href="#tag11">HTML无序列表</a></li>
+                            <li><a href="#tag12">HTML有序列表</a></li>
+                            <li><a href="#tag13">HTML表格</a></li>
+                            <li><a href="#tag14">HTML定义列表</a></li>
+                            <li><a href="#tag15">HTML引用</a></li>
+                            <li><a href="#tag16">HTML行内引用</a></li>
+                            <li><a href="#tag17">HTML计算机代码</a></li>
+                            <li><a href="#tag18">HTML预编排文字</a></li>
+                        </ul>
+                        <a href="#Basic-CSS">基础CSS</a>
+                        <a href="#CSS-gramma">CSS基本语法</a>
+                        <a href="#CSS-attributions">CSS属性</a>
+                        <ul>
+                            <li><a href="#CSS-color">CSS颜色</a></li>
+                            <li><a href="#CSS-font">CSS字体</a></li>
+                            <li><a href="#CSS-text">CSS文本</a></li>
+                            <li><a href="#CSS-background">CSS背景</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--“回到顶部”按钮-->
+            <div class="Top-button">
+                <a href="#top">Λ</a>
+            </div>
+        </div>
+            
+        <!--网页末尾和脚注-->
+        <div class="footer">
+            <p>Copyright &copy; 2018-2019 <strong>SCUT</strong> 
+                All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

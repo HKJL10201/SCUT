@@ -1,0 +1,130 @@
+.Interface{
+    width: 100%;
+    height: 100%;
+    z-index: 254;
+    position: absolute;
+}
+.interface_bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+}
+.form{
+    margin-top: 10%;
+    width: 268px;
+    height: auto;
+    background-color: white;
+    align-items: flex-start;
+    border: 1px solid #d8dee2;
+    border-radius: 5px;
+    z-index: 255;
+    padding: 20px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+label{
+    color: rgb(36, 41, 46);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-bottom: 7px;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+.unpw{
+    margin-bottom: 15px;
+    display: block;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    line-height: 20px;
+    color:#24292e;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+    padding: 6px 8px;
+}
+.unpw:focus{
+    border:  1px solid #66adfe;
+    box-shadow: 0 0 3px #b3d1f3;
+}
+.onebtn{
+    height: auto;
+    margin-bottom: 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    font-family: inherit;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid rgba(102, 123, 143, 0.2);
+    border-radius: .25em;
+}
+#login_confirm{
+    background-color:#389bdd;
+    background-image: linear-gradient(-180deg,#67bcec,#389bdd 90%);
+}
+#login_confirm:hover{
+    background-color:#348ecae0;
+    background-image: linear-gradient(-180deg,#5ab5ebf9,#348ecae0 90%);
+    border: 1px solid rgba(27,31,35,.2);
+}
+.bt_space{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    overflow: hidden;
+}
+.one_of_btns{
+    display: block;
+    width: calc(50% - 10px);
+    height: auto;
+    text-align: center;
+    color:#fff;
+    font-family: inherit;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    border: 1px solid rgba(102, 123, 143, 0.2);
+    border-radius: .25em;
+}
+#register_confirm{
+    background-color:#28a745;
+    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+}
+#register_confirm:hover{
+    background-color:#179e36;
+    background-image: linear-gradient(-180deg,#2aca50,#179e36 90%);
+    border: 1px solid rgba(27,31,35,.2);
+}
+#cancel_btn{
+    background-color:#4e4e4e;
+    background-image: linear-gradient(-180deg,#686868,#4e4e4e 90%);
+}
+#cancel_btn:hover{
+    background-color:#3f3f3f;
+    background-image: linear-gradient(-180deg,#5e5e5e,#3f3f3f 90%);
+    border: 1px solid rgba(27,31,35,.2);
+}
+#new-pw2{
+    margin-bottom: 5px;
+}
+#update_form .error{
+    margin: 0;
+}
+.error{
+    font-size: 12px;
+    color: transparent;
+    font-weight: normal;
+}

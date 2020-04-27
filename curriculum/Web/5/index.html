@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="My web page" content="web, html"/>
+        <title>Web Experiment V</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="exp5.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left">
+                <h1>待办事项</h1>
+            </div>
+        </div>
+        <div id="to-do" class="content">
+            <div class="left">
+                <p>添加待办事项：</p>
+                <textarea id="Input"></textarea>
+                <button id="Add" onclick="append()">➕添加事项</button>
+            </div>
+            <hr />
+            <div class="left">
+                <p>待办事项：</p>
+                <ul id="to-do-list">
+                    <li><input type="checkbox">Example1</li>
+                    <li><input type="checkbox">Example2</li>
+                    <li><input type="checkbox">Example3</li>
+                </ul>
+                <block>
+                    <button id="Selectall" onclick="selectall()">全选</button>
+                    <button id="Deselectall" onclick="deselectall()">全不选</button>
+                    <button id="Delete" onclick="delet()">删除所选</button>
+                </block>
+            </div>
+        </div>
+    </body>
+</html>

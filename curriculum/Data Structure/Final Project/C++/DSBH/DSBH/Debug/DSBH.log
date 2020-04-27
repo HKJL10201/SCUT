@@ -1,0 +1,8 @@
+﻿  split.cpp
+D:\Code\GitHub\curriculum\Data Structure\Final Project\C++\DSBH\DSBH\split.cpp(105,20): warning C4018: “<”: 有符号/无符号不匹配
+  源.cpp
+D:\Code\GitHub\curriculum\Data Structure\Final Project\C++\DSBH\DSBH\split.cpp(118,31): warning C4018: “<”: 有符号/无符号不匹配
+D:\Code\GitHub\curriculum\Data Structure\Final Project\C++\DSBH\DSBH\源.cpp(54,8): warning C4101: “a”: 未引用的局部变量
+  正在生成代码...
+D:\Code\GitHub\curriculum\Data Structure\Final Project\C++\DSBH\DSBH\源.cpp(54,11): warning C4101: “b”: 未引用的局部变量
+  DSBH.vcxproj -> D:\Code\GitHub\curriculum\Data Structure\Final Project\C++\DSBH\Debug\DSBH.exe

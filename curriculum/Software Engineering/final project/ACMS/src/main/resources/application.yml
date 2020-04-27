@@ -1,0 +1,10 @@
+server:
+  port: 8328
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: test
+    url: jdbc:mysql://localhost:3306/rjgc3328
+    username: rjgc
+    password: rjgc123

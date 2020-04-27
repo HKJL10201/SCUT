@@ -1,0 +1,6 @@
+C:\Users\hkjl1\OneDrive\Code\编译原理3\bin\Debug\编译原理3.exe.config
+C:\Users\hkjl1\OneDrive\Code\编译原理3\bin\Debug\编译原理3.exe
+C:\Users\hkjl1\OneDrive\Code\编译原理3\bin\Debug\编译原理3.pdb
+C:\Users\hkjl1\OneDrive\Code\编译原理3\obj\Debug\编译原理3.csprojAssemblyReference.cache
+C:\Users\hkjl1\OneDrive\Code\编译原理3\obj\Debug\编译原理3.exe
+C:\Users\hkjl1\OneDrive\Code\编译原理3\obj\Debug\编译原理3.pdb

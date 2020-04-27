@@ -1,0 +1,27 @@
+package pers.lee.acms.models;
+
+public class User {
+    private String username;
+    private String password;
+
+    public User(String username,String password)
+    {
+        this.username=username;
+        this.password=password;
+    }
+
+    public String getUsername()
+    {
+        return this.username;
+    }
+
+    public String getPassword()
+    {
+        return this.password;
+    }
+
+    public String print()
+    {
+        return this.username+"\t"+this.password+";\t\n";
+    }
+}

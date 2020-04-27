@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="My web page" content="web, html"/>
+        <title>社区论坛</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/bbs.css">
+        <script src="./js/jquery.js"></script>
+        <script src="./js/bbs.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dvR6EBG5Z7yzEeAiGcwArzXet3XbqDUj"></script>  
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-bar">
+                <div class="header-blur"></div>
+                <div class="header-shadow"></div>
+                <div class="header-text-mask">
+                    <div class="header-text">
+                        <div class="title">
+                            <h1>深圳</h1>
+                            <p>A Marvelous City</p>
+                        </div>
+                        <div class="manubar">
+                            <a href="./bbs.html">社区论坛</a>
+                            <a href="https://www.microsoftstore.com.cn/" target="blank">深圳文化</a>
+                            <a href="https://cn.bing.com/" target="blank">深圳经济</a>
+                            <a href="https://cn.bing.com/images/" target="blank">传统美食</a>
+                            <a href="https://msdn.microsoft.com/en-us/" target="blank">热门景点</a>
+                            <a href="./index.html">主页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sub-title">
+                <h1>社区论坛</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="page">
+                <div class="content-text">
+                    <div id="map-block"></div>
+                    <script src="./js/map.js"></script>
+                    <ul id="to-do-list">
+                        <li><input type="checkbox"><div class="li-txt"><p>深圳地处珠江三角洲前沿，是连接香港和中国内地的纽带和桥梁，在中国高新技术产业、金融服务、外贸出口、海洋运输、创意文化等多方面占有重要地位，在中国的制度创新、扩大开放等方面肩负着试验和示范的重要使命。深圳水陆空铁口岸俱全，是中国拥有口岸数量最多、出入境人员最多、车流量最大的口岸城市。</p></div><div class="name-time"><p>城市百科</p><p>2019/6/20 17:32</p></div></li>
+                        <li><input type="checkbox"><div class="li-txt"><p>深圳的经济特区发展史虽只有30多年，却拥有着6700多年的人类活动史（新石器时代中期就有土著居民繁衍生息在深圳土地上）、1700多年的郡县史、600多年的南头城史、大鹏城史和300多年的客家人移民史。</p></div><div class="name-time"><p>History</p><p>2019/6/21 10:51</p></div></li>
+                        <li><input type="checkbox"><div class="li-txt"><p>深圳位于广东省中南沿海地区，珠江入海口之东偏北，所处纬度较低，属亚热带海洋性气候。由于深受季风的影响，夏季盛行偏东南风，时有季风低压、热带气旋光顾，高温多雨；其余季节盛行东北季风，天气较为干燥，气候温和，年平均气温22.4℃，最高气温38.7℃（1980年7月10日）、最低气温0.2℃（1957年2月11日）。雨量充足，每年4~9月为雨季，年降雨量1933.3毫米，年降雨量最多纪录2662毫米（1957年），年降雨量最少纪录913毫米（1963年）。日照时间长，平均年日照时数2120.5小时，太阳年辐射量5225年兆焦耳/平方米。常年主导风向为东南偏东风，平均每年受热带气旋（台风）影响4~5次。</p></div><div class="name-time"><p>Weather</p><p>2019/6/21 19:26</p></div></li>
+                        <li><input type="checkbox"><div class="li-txt"><p>深圳市自改革开放以来，从单一的民族成分，发展到2002年已拥有55个少数民族，是继北京之后全国第二座汇聚齐56个民族成分的大城市，被国家列为全国12个少数民族流动人口服务管理体系建设工作试点城市之一。2013年，全市少数民族人口109万人，超过上海、北京、广州，成为全国少数民族人口聚居最大的城市。年内，深圳市1万人以上的少数民族有12个，常住人口中少数民族人口最多的是壮族，其次是土家族、苗族、侗族、瑶族、回族、布依族、满族、彝族、朝鲜族、蒙古族、黎族。</p></div><div class="name-time"><p>热心市民</p><p>2019/6/22 09:43</p></div></li>
+                        <li><input type="checkbox"><div class="li-txt"><p>深圳是中国经济改革和对外开放的“试验场”，率先建立起比较完善的社会主义市场经济体制，创造了世界工业化、城市化、现代化史上的奇迹，是中国改革开放近30年辉煌成就的精彩缩影。</p></div><div class="name-time"><p>Alan Brooke</p><p>2019/6/22 21:34</p></div></li>
+                        <li><input type="checkbox"><div class="li-txt"><p>2011年底，深圳市长途客运班线覆盖省内各市县，辐射香港、澳门及内地20多个省（自治区、直辖市）。随着珠三角区域交通一体化和高速公路联网的实现，深圳作为国家级交通枢纽城市的地位进一步巩固。</p></div><div class="name-time"><p>Dr.Strange</p><p>2019/6/24 14:21</p></div></li>
+                    </ul>
+                    <div class="left">
+                        <block>
+                            <button id="Selectall" onclick="selectall()">全选</button>
+                            <button id="Deselectall" onclick="deselectall()">全不选</button>
+                            <button id="Delete" onclick="delet()">删除所选</button>
+                        </block>
+                        <p>添加留言：</p>
+                        <textarea id="Input-name" placeholder="输入你的名字"></textarea>
+                        <textarea id="Input" placeholder="说点什么"></textarea>
+                        <button id="Add" onclick="append()">➕添加留言</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--“回到顶部”按钮-->
+            <div id="Top-button">
+                <a>Λ</a>
+            </div>
+        </div>
+
+        <!--网页末尾和脚注-->
+        <div class="footer">
+            <p>Copyright &copy; 2018-2019 <strong>SCUT</strong> 
+                All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

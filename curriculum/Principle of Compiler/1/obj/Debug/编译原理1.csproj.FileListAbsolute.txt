@@ -1,0 +1,12 @@
+D:\Code\VS\编译原理1\bin\Debug\编译原理1.exe.config
+D:\Code\VS\编译原理1\bin\Debug\编译原理1.exe
+D:\Code\VS\编译原理1\bin\Debug\编译原理1.pdb
+D:\Code\VS\编译原理1\obj\Debug\编译原理1.csprojAssemblyReference.cache
+D:\Code\VS\编译原理1\obj\Debug\编译原理1.exe
+D:\Code\VS\编译原理1\obj\Debug\编译原理1.pdb
+C:\Users\hkjl1\OneDrive\Code\编译原理1\bin\Debug\编译原理1.exe.config
+C:\Users\hkjl1\OneDrive\Code\编译原理1\bin\Debug\编译原理1.exe
+C:\Users\hkjl1\OneDrive\Code\编译原理1\bin\Debug\编译原理1.pdb
+C:\Users\hkjl1\OneDrive\Code\编译原理1\obj\Debug\编译原理1.csprojAssemblyReference.cache
+C:\Users\hkjl1\OneDrive\Code\编译原理1\obj\Debug\编译原理1.exe
+C:\Users\hkjl1\OneDrive\Code\编译原理1\obj\Debug\编译原理1.pdb

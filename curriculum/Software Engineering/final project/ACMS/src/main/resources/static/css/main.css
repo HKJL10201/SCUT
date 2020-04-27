@@ -1,0 +1,163 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+button:focus{
+    outline: none;
+}
+button::-moz-focus-inner{
+    border: 0; 
+}
+#content-interface input{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color:#24292e;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+    padding: 6px 8px;
+    margin-right: 10px;
+}
+#content-interface input:focus{
+    border:  1px solid #66adfe;
+    box-shadow: 0 0 3px #b3d1f3;
+}
+#content-interface button{
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    color:#fff;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    background-color: #1074e7;
+    border: 1px solid #1074e7;
+    border-radius: 3px;
+    text-align: center;
+    font-family: inherit;
+    line-height: 1.5;
+    padding:5px 8px;
+}
+#content-interface button:hover{
+    background-color: #0366d6;
+    border-color: #0366d6;
+    transition: .2s;
+}
+.linyx{
+    flex-direction: row;
+}
+.header{
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    color:hsla(0,0%,100%,.7);
+    background-color:#24292e;
+    padding-top: 8px ;
+    padding-bottom: 8px ;
+    font-family: inherit;
+    line-height: 1.5;
+}
+#header-cont{
+    width: 980px;
+    overflow: visible;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+#content-interface{
+    width: 980px;
+    height: 100%;
+    justify-content: center;
+}
+#signIn{
+    color: #fff;
+    background: transparent;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-color: #d1d5da;
+    border-radius: 3px;
+    border: 1px solid #e1e4e8;
+    text-align: left;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+#signIn:hover{
+    transition: .4s;
+    color: #c8c9bb;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 3px 12px rgba(27,31,35,.15),0 0 1px rgba(27,31,35,.2);
+    padding: 12px 16px;
+    border-radius: 3px;
+    color: #24292e;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#status label{
+    color:#fff;
+    font-family: inherit;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+a{
+    display: flex;
+    font-size: 14px;
+    padding: 2px;
+}
+a:hover{
+    cursor: pointer;
+    color: #66adfe;
+}
+#dropdown-arrow{
+    transform: scaleX(1.8);
+    font-weight: lighter;
+    font-size: 14px !important;
+    color: #868686 !important;
+}
+#dropdown-arrow:hover{
+    color: #c8c9bb !important;
+}
+button[disabled] {
+    color: #fff !important;
+    background-color: #9bd9ff !important;
+    cursor: auto !important;
+    border-color: #68afff !important;
+}

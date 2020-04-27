@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Air Conditioner Management System</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/form.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/list.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/worker.css">
+    <script src="./js/record.js"></script>
+    <script src="./js/users.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./js/util.js"></script>
+</head>
+<body id="body">
+    <div class="header">
+        <div class="bt_space" id="header-cont">
+            <div class="linyx" id="header-search">
+                <h1>ACMS</h1>
+            </div>
+            <div id="status">
+                <button id="signIn" onclick="signIn()">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="content-interface">
+            <div id="div-for-cus" class="function-form">
+                <div class="col-wrapper">
+                    <div class="linyx" id="home-search">
+                        <input id="acid" type="text" placeholder="Input air conditioner ID" onkeyup="if(event.keyCode==13)findById();" autocomplete="off"/>
+                        <button id="find_id" onclick="findById()">Search</button>
+                    </div>
+                    <label class="error" id="error">_</label>
+                </div>
+                <ul id="resList"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

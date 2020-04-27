@@ -1,0 +1,19 @@
+#home-search{
+    width: 480px;
+}
+#home-search input{
+    width: 100%;
+}
+#home-search button{
+    padding: 5px 15px;
+}
+.col-wrapper{
+    align-items: flex-end;
+}
+#div-for-cus{
+    margin-top: 20%;
+    height: 100%;
+}
+#div-for-cus ul{
+    margin-top: 20px;
+}

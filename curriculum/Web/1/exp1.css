@@ -1,0 +1,34 @@
+body{
+    background-color:rgb(6, 30, 110);
+}
+h1 {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+h2{
+    font-family:'Segoe UI', Tahoma,
+     Geneva, Verdana, sans-serif;
+}
+p{
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', 
+    sans-serif;
+}
+div.content{
+    margin-left: 20%;
+    margin-right: 25%;
+    position: relative;
+}
+p{
+    text-indent: 2em;
+    font-size: 20px;
+    text-align: justify;
+}
+a{
+    margin-left: 20%;
+}
+h1,h2,p,ol,ul{
+    color:rgb(1, 14, 56);
+}

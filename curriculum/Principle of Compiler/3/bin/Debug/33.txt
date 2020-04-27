@@ -1,0 +1,7 @@
+program example4;
+var  A,B,C,D:integer;
+begin
+    A:=18; B:=5; C:=3; D:=4;
+    while A<C and B>D 
+        if A=1 then C:=C+1
+end. 

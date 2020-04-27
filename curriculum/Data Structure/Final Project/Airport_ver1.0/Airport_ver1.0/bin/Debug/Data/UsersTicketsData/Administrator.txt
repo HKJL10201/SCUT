@@ -1,0 +1,10 @@
+Guangzhou
+Shenzhen2
+2019年1月1日
+0:00
+12:00
+32
+32
+2
+TEST_FN001
+TEST_AircraftType
