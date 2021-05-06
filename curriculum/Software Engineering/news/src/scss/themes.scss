@@ -1,0 +1,446 @@
+$common-bg-color: white;
+$common-font-color: #222;
+$common-nav-font-color: white;
+$commom-divider-color: #ded8db;
+
+$themes: (
+    default: (
+        //theme-color
+        theme-bg-color: $common-bg-color,
+        theme-font-color: $common-font-color,
+        theme-divider-color: #d5d8db,
+
+        //nav
+        nav-bg-color: #66A2E4,
+        nav-font-color: $common-nav-font-color,
+
+        //Settings.vue
+        //theme-img
+        theme-img-border: 4px solid #FFFFFF,
+        theme-img-box-shadow: 2px 3px 5px #c4c4c4,
+        
+        //theme-choose
+        theme-ch-radio-bg-color: #66A2E4,
+        theme-ch-radio-border-ck-color: #66A2E4,
+        //pop-font-choose
+        pop-font-ch-color: white,
+        font-ch-radio-border-color: #66A2E4,
+        font-ch-radio-core-color: white,
+        font-ch-radio-inner-color: #66A2E4,
+
+        //van-switch
+        switch-bg-on-color: #66A2E4,
+
+        //newsList
+        //频道导航条
+        van-tabs__nav-color:white,
+        //频道导航条字
+        van-tab__text-color:rgb(100, 101, 102),
+        //频道导航选中项线条
+        van-tabs__line-color: #66A2E4,
+        //按钮背景
+        add-channel-but:white,
+        //按钮外阴影
+        add-channel-box-shadow: -10px 0px 6px -3px rgba(255, 255, 255, 0.589),
+        //新闻标题
+        news-title-color:#333,
+        //增加栏目的框框
+        channel-pick-color:rgb(252, 250, 250),
+        // 弹出面板选中项阴影
+        channel-item-checked-box-shadow:1px 1px 3px 2px rgba(143, 166, 182, 0.61),
+        // 按钮变色
+        button-reply-color: #66A2E4,
+
+        //myCenter
+        //“未登入”字的颜色
+        sig-font-color:rgba(48, 48, 48, 0.8),
+        //设定基本资料提示字的颜色
+        not-font-color:#5e5e5e,
+        //设定基本资料箭头
+        arr-color:rgba(48, 48, 48, 0.4),
+        //选项字的颜色
+        op-font-color:rgba(0, 0, 0, 0.87),
+        //选项描述字的颜色
+        opdi-font-color:rgba(0, 0, 0, 0.60),
+        //跳转箭头颜色
+        goto-color:rgba(16, 16, 16, 0.6),
+        //登入按钮颜色
+        sig-but-color:#66A2E4,
+
+        //loginPage
+        //字的颜色
+        log-font-color:rgba(42, 42, 42, 0.8),
+
+        //changeUserInfo
+        //输入框的颜色
+        field-color:white,
+        //名字的字的眼色
+        name-edit-color:rgb(100, 101, 102),
+        //编辑标签的颜色
+        icon-color:rgba(48, 48, 48, 0.4),
+        //项目的字的颜色
+        word-color:#303030,
+        //“性别”的颜色
+        sex-color:#323233,
+        // 边框色
+        profile-bd-color: #DEDEDE,
+        
+        //myCollection
+        //新闻标题颜色
+        col-title-color:#333,
+        //详情的小字颜色
+        col-detail-color:#b4b4b4,
+
+        //myThumbUp
+        thumb-up-border-color: rgb(240, 240, 240),
+
+        //myContent
+        reply-block-bd-color: rgb(209, 209, 209),
+    ),
+    dark: (
+        //body 
+        // theme-bg-color: #121213,
+        theme-bg-color: #101113,
+        theme-font-color: #7B7A7E,
+        theme-divider-color: #525252,
+        //nav
+        nav-bg-color: #17181A,
+        nav-font-color: #A2A4A3,
+
+        /*Settings.vue*/
+        //theme-img
+        theme-img-border: 3px solid rgb(66, 66, 66),
+        //theme-choose
+        theme-ch-radio-bg-color: #4e5458,
+        theme-ch-radio-border-color: #4e5458,
+        theme-ch-radio-color: #5c7f95,
+        //pop-font-choose
+        pop-font-ch-color: #17181A,
+        font-ch-radio-bg-color:#1e2022,
+        font-ch-radio-border-color: #5c7f95,
+        font-ch-radio-core-color: #5c7f95,
+        font-ch-radio-inner-color: #1e2022,
+
+        //van-switch
+        switch-circle-color:#1e2022,
+        switch-bg-color: #4e5458,
+        switch-bg-on-color: #5c7f95,
+
+        //newsList
+        //频道导航条边框
+        van-tabs__wrap-bd: none,
+        //频道导航条
+        van-tabs__nav-color: #17181A,
+        // van-tabs__nav-color:#17181A,
+        //频道导航条字
+        van-tab__text-color: rgb(185, 184, 184),
+        //频道导航选中项线条
+        van-tabs__line-color: #5c7f95,
+        //按钮背景
+        add-channel-but:#17181A,
+        //按钮外阴影
+        add-channel-box-shadow: -10px 0px 6px -3px rgba(22, 22, 22, 0.726),
+        //新闻标题
+        news-title-color: #7B7A7E,
+        // 新闻卡片底部边框
+        news-card-bd-bottom: 1px solid rgb(36, 36, 36),
+        //增加栏目的框框
+        channel-pick-color:#101113,
+        // 弹出面板的背景色与字体色
+        channel-pick-pop-bg-color: #17181A,
+        channel-pick-pop-font-color: #A2A4A3,
+        // 弹出面板条目项阴影
+        channel-item-box-shadow: 1px 1px 3px 1px rgb(59, 59, 59),
+        // 弹出面板条目边框
+        channel-item-bd: 1px solid #313131,
+        // 弹出面板选中项阴影
+        channel-item-checked-box-shadow:1px 1px 3px 2px rgba(202, 229, 247, 0.61),
+
+
+        //newsDetails
+        // 背景色
+        news-details-bg-color: #17181A,
+        // 底部栏上边框
+        footer-fixed-bd-top: 1PX solid #272727,
+        // 底部栏背景色
+        footer-fixed-bg-color: #17181A,
+        // input输入框背景色
+        trigger-input-bg-color: #222222,
+        // input输入文字颜色
+        trigger-input-font-color: #6d6d6d,
+        // input输入框包裹色
+        trigger-input-wrap-bg-color: #17181A,
+        // 按钮变色
+        button-reply-color: #5c7f95,
+
+        //myCenter
+        //“未登入”字的颜色
+        sig-font-color:#7B7A7E,
+        //设定基本资料提示字的颜色
+        not-font-color:#7B7A7E,
+        //设定基本资料箭头
+        arr-color:rgba(255, 255, 255, 0.589),
+        //选项字的颜色
+        op-font-color:#7B7A7E,
+        //选项描述字的颜色
+        opdi-font-color:#7B7A7E,
+        //跳转箭头颜色
+        goto-color:rgba(255,255,255,0.589),
+        //登入按钮颜色
+        sig-but-color:#5c7f95,
+        border-color: #5c7f95,
+
+        //loginPage、registerPage
+        //字的颜色
+        log-font-color:#7B7A7E,
+        smile-color: rgba(127, 166, 207, 0.65),
+
+        //changeUserInfo
+        //输入框的颜色
+        field-color:#101113,
+        //名字的字的眼色
+        name-edit-color:rgba(255,255,255,0.589),
+        //编辑标签的颜色
+        icon-color:rgba(255,255,255,0.589),
+        //项目的字的颜色
+        word-color:rgba(255,255,255,0.589),
+        //“性别”的颜色
+        sex-color:rgba(255,255,255,0.589),
+        // 边框色
+        profile-bd-color: rgb(70, 70, 70),
+
+        //myCollection
+        //新闻标题颜色
+        col-title-color:#7B7A7E,
+        //详情的小字颜色
+        col-detail-color:rgba(180, 180, 180, 0.3),
+        //新闻与新闻间的边框
+        col-border-color:#101113,
+
+        //myThumbUp
+        thumb-up-username-color: #5c7f95,
+        thumb-up-content-color: #7B7A7E,
+        thumb-up-time-color: rgba(180, 180, 180, 0.3),
+        thumb-up-border-color: #3b3b3b,
+        thumb-up-sub-title-color: #3b3b3b,
+
+        //myComment
+        reply-content-bg-color: rgb(44, 44, 44),
+        reply-content-bd-color: rgb(44, 44, 44),
+        reply-block-bd-color: rgb(82, 82, 82),
+
+        //changePassword
+        //输入框背景颜色
+        chP-back-color:#252525,
+
+        //changePwProtection
+        //密保问题选择框和答案输入框背景颜色
+        chP-picker-color:#252525,
+        chP-pickerc-color:#7B7A7E,
+
+        //forgetPassword
+        //输入框颜色
+        for-input-color:#252525,
+
+        //reply
+        //被回复内容的框框背景色
+        replyC-back-color:#252525,
+        //回复的内容字的颜色
+        replyC-font-color:rgb(170, 170, 170),
+    ),
+    red: (
+        //theme-color
+        theme-bg-color: $common-bg-color,
+        //theme-bg-color:rgba(234, 153, 153, 0.2),
+        theme-font-color: $common-font-color,
+        theme-divider-color: #d5d8db,
+
+        //nav
+        nav-bg-color: #ED6161,
+        nav-font-color: $common-nav-font-color,
+
+        //Settings.vue
+        //theme-img
+        theme-img-border: 4px solid #FFFFFF,
+        theme-img-box-shadow: 2px 3px 5px #c4c4c4,
+        
+        //theme-choose
+        theme-ch-radio-bg-color: #ED6161,
+        theme-ch-radio-border-ck-color: #ED6161,
+        //pop-font-choose
+        pop-font-ch-color: white,
+        font-ch-radio-border-color: #ED6161,
+        font-ch-radio-core-color: white,
+        font-ch-radio-inner-color: #ED6161,
+
+        //van-switch
+        switch-bg-on-color: #ED6161,
+
+        //newsList
+        //频道导航条
+        van-tabs__nav-color:white,
+        //van-tabs__nav-color:rgba(248, 163, 163, 0.4),
+        //频道导航条字
+        van-tab__text-color:rgb(100, 101, 102),
+        //van-tab__text-color:rgba(29, 18, 18, 0.9),
+        //频道导航选中项线条
+        van-tabs__line-color: #ED6161,
+        //按钮背景
+        add-channel-but:white,
+        //按钮外阴影
+        add-channel-box-shadow: -10px 0px 6px -3px rgba(255, 255, 255, 0.589),
+        //新闻标题
+        news-title-color:#333,
+        //增加栏目的框框
+        channel-pick-color:rgb(252, 250, 250),
+        // 弹出面板选中项阴影
+        channel-item-checked-box-shadow:1px 1px 3px 2px rgba(219, 155, 155, 0.61),
+        // 按钮变色
+        button-reply-color: #ED6161,
+
+        //myCenter
+        //“未登入”字的颜色
+        sig-font-color:rgba(48, 48, 48, 0.8),
+        //设定基本资料提示字的颜色
+        not-font-color:#5e5e5e,
+        //设定基本资料箭头
+        arr-color:rgba(48, 48, 48, 0.4),
+        //选项字的颜色
+        op-font-color:rgba(0, 0, 0, 0.87),
+        //选项描述字的颜色
+        opdi-font-color:rgba(0, 0, 0, 0.60),
+        //跳转箭头颜色
+        goto-color:rgba(16, 16, 16, 0.6),
+        //登入按钮颜色
+        sig-but-color:rgba(237, 97, 97, 0.8),
+        //按钮边框
+        border-color:rgba(237, 97, 97, 0.8),
+
+        //loginPage
+        //字的颜色
+        log-font-color:rgba(42, 42, 42, 0.8),
+        smile-color:rgba(237, 97, 97, 0.85),
+
+        //changeUserInfo
+        //输入框的颜色
+        field-color:white,
+        //名字的字的眼色
+        name-edit-color:rgb(100, 101, 102),
+        //编辑标签的颜色
+        icon-color:rgba(48, 48, 48, 0.4),
+        //项目的字的颜色
+        word-color:#303030,
+        //“性别”的颜色
+        sex-color:#323233,
+        // 边框色
+        profile-bd-color: #DEDEDE,
+        //选项勾勾颜色
+        choose-color: rgba(237, 97, 97, 0.9),
+        //保存按钮颜色
+        button-color:rgba(237, 97, 97, 0.8),
+
+        //myThumbUp
+        thumb-up-border-color: rgb(177, 177, 177),
+
+        //myContent
+        reply-block-bd-color: rgb(209, 209, 209),
+    ),
+    khaki: (
+        //theme-color
+        theme-bg-color: $common-bg-color,
+        //theme-bg-color:rgba(234, 153, 153, 0.2),
+        theme-font-color: $common-font-color,
+        theme-divider-color: #d5d8db,
+
+        //nav
+        nav-bg-color: #dddaa9,
+        nav-font-color: $common-nav-font-color,
+
+        //Settings.vue
+        //theme-img
+        theme-img-border: 4px solid #FFFFFF,
+        theme-img-box-shadow: 2px 3px 5px #c4c4c4,
+        
+        //theme-choose
+        theme-ch-radio-bg-color: #dddaa9,
+        theme-ch-radio-border-ck-color: #dddaa9,
+        //pop-font-choose
+        pop-font-ch-color: white,
+        font-ch-radio-border-color: #dddaa9,
+        font-ch-radio-core-color: white,
+        font-ch-radio-inner-color: #dddaa9,
+
+        //van-switch
+        switch-bg-on-color: #dddaa9,
+
+        //newsList
+        //频道导航条
+        van-tabs__nav-color:white,
+        //van-tabs__nav-color:rgba(248, 163, 163, 0.4),
+        //频道导航条字
+        van-tab__text-color:rgb(100, 101, 102),
+        //van-tab__text-color:rgba(29, 18, 18, 0.9),
+        //频道导航选中项线条
+        van-tabs__line-color: #dddaa9,
+        //按钮背景
+        add-channel-but:white,
+        //按钮外阴影
+        add-channel-box-shadow: -10px 0px 6px -3px rgba(255, 255, 255, 0.589),
+        //新闻标题
+        news-title-color:#333,
+        //增加栏目的框框
+        channel-pick-color:rgb(252, 250, 250),
+        // 弹出面板选中项阴影
+        channel-item-checked-box-shadow:1px 1px 3px 2px rgba(233, 196, 127, 0.61),
+        // 按钮变色
+        button-reply-color: #DDDAA9,
+
+        //myCenter
+        //“未登入”字的颜色
+        sig-font-color:rgba(48, 48, 48, 0.8),
+        //设定基本资料提示字的颜色
+        not-font-color:#5e5e5e,
+        //设定基本资料箭头
+        arr-color:rgba(48, 48, 48, 0.4),
+        //选项字的颜色
+        op-font-color:rgba(0, 0, 0, 0.87),
+        //选项描述字的颜色
+        opdi-font-color:rgba(0, 0, 0, 0.60),
+        //跳转箭头颜色
+        goto-color:rgba(16, 16, 16, 0.6),
+        //登入按钮颜色
+        sig-but-color:rgba(221, 218, 169, 0.8),
+        //按钮边框
+        border-color:rgba(221, 218, 169, 0.8),
+
+        //loginPage
+        //字的颜色
+        log-font-color:rgba(42, 42, 42, 0.8),
+        smile-color:rgba(221, 218, 169, 0.9),
+
+        //changeUserInfo
+        //输入框的颜色
+        field-color:white,
+        //名字的字的眼色
+        name-edit-color:rgb(100, 101, 102),
+        //编辑标签的颜色
+        icon-color:rgba(48, 48, 48, 0.4),
+        //项目的字的颜色
+        word-color:#303030,
+        //“性别”的颜色
+        sex-color:#323233,
+        // 边框色
+        profile-bd-color: #DEDEDE,
+        //选项勾勾颜色
+        choose-color: rgba(221, 218, 169, 0.9),
+        //保存按钮颜色
+        button-color:rgba(221, 218, 169, 0.8),
+
+        //myThumbUp
+        thumb-up-border-color: rgb(177, 177, 177),
+
+        //myContent
+        reply-block-bd-color: rgb(209, 209, 209),
+    ),
+
+);

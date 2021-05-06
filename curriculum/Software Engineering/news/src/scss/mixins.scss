@@ -1,0 +1,29 @@
+@import './themes.scss';
+
+$nav-color: rgb(223, 75, 70);
+
+@mixin themify {
+    @each $theme-name, $map in $themes {
+        $theme-map: $map !global;
+        body[data-theme=#{$theme-name}] & {
+            @content;
+        }
+    }
+}
+
+@function themed($key){
+    @return map-get($theme-map, $key);
+}
+
+@mixin setFontSize($size) {
+    // font-size: $size;
+    body[data-size='large'] & {
+        font-size:$size + 3px;
+    }
+    body[data-size='medium'] & {
+        font-size:$size;
+    }
+    body[data-size='small'] & {
+        font-size:$size - 3px;
+    }
+}

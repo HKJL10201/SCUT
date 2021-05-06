@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <meta name="referrer" content="no-referrer"> 
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body data-theme="default">
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="container" class="wap-wrap">
+    <div id="app"></div>
+  </div>
+</body>
+
+</html>
+
+<script>
+   // 用于适配ipad以及ipad pro
+  //  ;/(iPhone|iPad|iPhone OS|Phone|iPod|iOS)/i.test(navigator.userAgent) &&
+  //       ((head = document.getElementsByTagName('head')),
+  //       (viewport = document.createElement('meta')),
+  //       (viewport.name = 'viewport'),
+  //       (viewport.content =
+  //         'target-densitydpi=device-dpi, width=480px, user-scalable=no'),
+  //       head.length > 0 && head[head.length - 1].appendChild(viewport))
+</script>
+
+<style>
+  html, body, #container{
+    height: 100%;
+    /* background-color: #eeeeee; */
+    /* background-color: #f6f6f6; */
+
+  }
+  /* 解决iPad pro适配 -两边留白 */
+  /* @media screen and (min-width: 769px) {
+    html {
+      font-size: 76.8px !important;
+    }
+
+    html .wap-wrap {
+      width: 768px;
+      margin: 0 auto;
+    }
+  } */
+</style>
